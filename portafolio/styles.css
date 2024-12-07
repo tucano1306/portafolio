@@ -1,5 +1,5 @@
 :root {
-    /* Dark theme (default) */
+    
     --primary-color: #c5dad8;
     --accent-color: #f70808;
     --dark-bg: #0a0a0a;
@@ -240,7 +240,7 @@ ffile-section {
     animation: iconFadeIn 0.6s ease forwards;
 }
 
-/* Retraso para cada icono */
+
 .tech-item:nth-child(1) {
     animation-delay: 0.5s;
 }
@@ -691,10 +691,10 @@ header {
 
 .project-card img {
     width: 100%;
-    height: 200px; /* Altura fija */
-    object-fit: contain; /* Cambiado de 'cover' a 'contain' */
-    background-color: #141414; /* Color de fondo para el área de la imagen */
-    padding: 1rem; /* Añade espacio alrededor de la imagen */
+    height: 200px; 
+    object-fit: contain; 
+    background-color: #141414; 
+    padding: 1rem; 
 }
 
 .project-info {
@@ -709,14 +709,14 @@ header {
 
 
 
-/* Contact Form */
+
 .contact {
-    min-height: 90vh;  /* Reducido un poco para evitar el corte */
-    padding: 1rem 0;   /* Menor padding superior e inferior para ajustar la posición */
-    margin-top: 1rem;  /* Menor margen superior para levantar la sección */
+    min-height: 90vh;  
+    padding: 1rem 0;   
+    margin-top: 1rem;  
 }
 
-/* Estilo del título en la sección de contacto */
+
 .contact h2 {
     width: 100%;
     max-width: min(600px, 90%);
@@ -727,15 +727,15 @@ header {
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-/* Estilo del formulario de contacto */
+
 .contact-form {
     background: var(--card-bg);
-    padding: 2rem;  /* Espacio interno más ajustado */
+    padding: 2rem;  
     border-radius: 10px;
     width: 100%;
     max-width: 500px; 
-    margin: 0 auto;  /* Centrar el formulario */
-    margin-bottom: 4rem; /* Menor espacio adicional en la parte inferior para que quede más alto */
+    margin: 0 auto; 
+    margin-bottom: 4rem; 
 }
 
 
@@ -747,7 +747,7 @@ header {
 
     .contact {
         padding-top: 4rem;
-        padding-bottom: 8rem; /* Más espacio en móvil para el menú */
+        padding-bottom: 8rem; 
     }
 }
 
@@ -823,7 +823,7 @@ header {
     transform: translateY(-3px);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from { 
         opacity: 0; 
@@ -839,12 +839,12 @@ header {
     animation: fadeIn 1s ease-out;
 }
 
-/* Mobile Menu */
+
 .mobile-menu {
     display: none;
     position: fixed;
     right: 1.5rem;
-    bottom: 5rem; /* Aumentado para evitar superposición con el formulario */
+    bottom: 5rem; 
     width: 40px;
     height: 40px;
     background: var(--primary-color);
@@ -868,11 +868,11 @@ header {
     background: var(--accent-color);
 }
 
-/* Contact  Mobile Adjustments */
+
 @media (max-width: 480px) {
     .mobile-menu {
         display: flex;
-        bottom: 6rem; /* Ajustado para dar más espacio */
+        bottom: 6rem; 
     }
 
     .hero-content h1 {
@@ -902,7 +902,7 @@ header {
     }
 }
 
-/* Small devices (large phones, 576px and up) */
+
 @media (min-width: 361px) and (max-width: 576px) {
     .container {
         padding: 1rem;
@@ -915,7 +915,7 @@ header {
         overflow-x: hidden;
     }
 
-    /* Secciones generales */
+    
     section {
         min-height: 100vh;
         width: 100%;
@@ -939,7 +939,7 @@ header {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 577px) and (max-width: 768px) {
     .container {
         margin: 0 40px 0 0;
@@ -956,7 +956,7 @@ header {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+
 @media (min-width: 769px) and (max-width: 992px) {
     .container {
         max-width: calc(100% - 50px);
@@ -967,14 +967,14 @@ header {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .container {
         max-width: calc(1100px - 50px);
     }
 }
 
-/* Ajustes generales para mejor responsividad */
+
 .hero {
     flex-wrap: wrap;
     gap: clamp(1rem, 4vw, 4rem);
@@ -988,7 +988,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* Orientación landscape en móviles */
+
 @media (max-height: 500px) and (orientation: landscape) {
     .hero {
         min-height: auto;
@@ -1005,7 +1005,7 @@ header {
     }
 }
 
-/* iPads y Tablets en portrait */
+
 @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
@@ -1019,7 +1019,7 @@ and (orientation: portrait) {
     }
 }
 
-/* iPads y Tablets en landscape */
+
 @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
@@ -1029,7 +1029,7 @@ and (orientation: landscape) {
     }
 }
 
-/* Ajustes para dispositivos con notch */
+
 @supports (padding-top: env(safe-area-inset-top)) {
     .container {
         padding-left: max(1rem, env(safe-area-inset-left));
@@ -1037,7 +1037,7 @@ and (orientation: landscape) {
     }
 }
 
-/* Mejoras para la navegación móvil */
+
 @media (max-width: 768px) {
     .side-nav {
         background-color: rgba(var(--dark-bg), 0.95);
@@ -1052,7 +1052,7 @@ and (orientation: landscape) {
 
     .side-nav.active {
         transform: translateY(0);
-        bottom: 5rem; /* Ajustar para que no se superponga con el botón */
+        bottom: 5rem; 
         height: auto;
         padding: 1rem 0;
     }
@@ -1073,21 +1073,21 @@ and (orientation: landscape) {
     }
 }
 
-/* Ajustes para pantallas de alta densidad */
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .neon-circle {
         border-width: 1.5px;
     }
 }
 
-/* Estilos para las secciones */
+
 section {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.8s ease-out;
 }
 
-/* Estilo para la navegación activa */
+
 .nav-item {
     position: relative;
     overflow: hidden;
@@ -1109,12 +1109,12 @@ section {
     width: 100%;
 }
 
-/* Efecto de brillo al hacer hover */
+
 .nav-item:hover {
     text-shadow: 0 0 8px var(--accent-color);
 }
 
-/* Efecto de destello al hacer click */
+
 .nav-item.clicked {
     animation: flash 0.3s ease;
 }
@@ -1131,7 +1131,7 @@ section {
     }
 }
 
-/* Estilos para la sección de proyectos */
+
 #projects {
     position: relative;
 }
@@ -1152,15 +1152,14 @@ section {
     transform: scaleX(1);
 }
 
-/* Projects  */
     .projects {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 20px;
-        min-height: 80vh;  /* Reducido de 100vh */
-        padding: 2rem 0;   /* Reducido de 4rem */
+        min-height: 80vh;  
+        padding: 2rem 0;   
         margin-bottom: 4rem;
           margin-top: 4rem;
         }
@@ -1172,8 +1171,8 @@ section {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 2rem;
-    color: #00ffff; /* Para mantener el color cyan que se ve en la imagen */
-    font-size: 2rem; /* Ajusta el tamaño según necesites */
+    color: #00ffff; 
+    font-size: 2rem; 
 }
 
 
@@ -1183,13 +1182,13 @@ section {
     gap: 2rem;
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 4rem; /* Espacio adicional abajo */
+    padding-bottom: 4rem; /
     
 }
 
 .project-grid {
-    width: 70%;        /* Reducido de 80% */
-    gap: 2rem;         /* Reducido de 3rem */
+    width: 70%;       
+    gap: 2rem;        
  }
 
 .project-card {    
@@ -1239,11 +1238,11 @@ section {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 428px) { /* iPhone 14 Pro Max width */
+@media screen and (max-width: 428px) { 
     .projects {
         min-height: 70vh;
         padding: 1.5rem 0.5rem;
-        scale: 0.9; /* Reduce toda la sección */
+        scale: 0.9; 
     }
 
     .section-title {
@@ -1260,15 +1259,14 @@ section {
     }
 }
 
-/* Para dispositivos aún más pequeños */
-@media screen and (max-width: 390px) { /* iPhone 14 width */
+@media screen and (max-width: 390px) { 
     .projects {
         scale: 0.85;
         min-height: 65vh;
     }
 }
 
-/* Para asegurar el scroll suave */
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
@@ -1289,10 +1287,8 @@ body {
     }
 }
 
-/* Estilos base para las secciones */
 
 
-/* Clases de animación para cada sección */
 .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
 }
@@ -1305,7 +1301,7 @@ body {
     animation: fadeInScale 0.8s ease-out forwards;
 }
 
-/* Keyframes para las animaciones */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1385,18 +1381,18 @@ body {
     }
 }
 
-/* Asegura que cada sección tenga suficiente espacio */
+
 section {
-    min-height: 100vh; /* Asegura que cada sección ocupe al menos el alto de la pantalla */
-    padding: 2rem 1rem; /* Añade padding interno */
-    margin-bottom: 2rem; /* Añade margen entre secciones */
+    min-height: 100vh; 
+    padding: 2rem 1rem; 
+    margin-bottom: 2rem;
     width: 100%;
     
     
 }
 
 .container {
-    overflow: hidden; /* Evita desbordamiento de contenido */
+    overflow: hidden; 
 }
 
 .project-link {
@@ -1471,7 +1467,7 @@ p .about-text {
     }
 }
 
-/* Ajuste del contenedor del proyecto */
+
 .project-card {
     display: flex;
     align-items: center;
