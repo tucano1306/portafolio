@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Academlo Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/logo-svg.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="side-nav">
+        <a href="#about" class="nav-item">ABOUT</a>
+        <a href="#projects" class="nav-item">PROJECTS</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
+    </nav>
+
+    <button class="mobile-menu show-mobile" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <button class="mobile-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./img/logo-svg.svg" alt="LC Logo">
+            </div>
+            <div class="nav-buttons">
+                <div class="language-switcher">
+                    <button onclick="toggleLanguage()" class="lang-btn">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNDgwIj48cGF0aCBmaWxsPSIjYzYwYjFlIiBkPSJNMCAwaDY0MHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZmZjNDAwIiBkPSJNMCAxMjBoNjQwdjI0MEgweiIvPjwvc3ZnPg==" 
+                             alt="ES" class="flag" id="flagImage">
+                    </button>
+                </div>
+                <button class="theme-switch" onclick="toggleTheme()">🌙</button>
+            </div>
+        </header>
+
+        <div class="text-content">
+    <h3 class="typewriter">Leonardo Canepa</h3>
+   
+    
+</div>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <div class="title-section">
+                    <h1>Full Stack</h1>
+                    <span class="role">Full Stack <span class="highlight">Junior</span></span>
+                </div>
+
+                <div class="profile-content">
+                    <h2>Hi!</h2>
+                    <p class="about-text">
+                        Hola, soy un <strong>desarrollador Fullstack Junior</strong> con pasión por aprender y crecer en el desarrollo web. 
+                        Manejo tecnologías como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, para crear 
+                        aplicaciones dinámicas y funcionales. Estoy listo para enfrentar nuevos desafíos y aportar valor a tu equipo.
+                    </p>
+
+                    <div class="tech-icons">
+                        <div class="tech-row">
+                            <div class="tech-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="neon-circle">
+                    <img src="./img/pc2.png" alt="Desktop Computer">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Mis Últimos Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./img/pc1.png" alt="Proyecto 1" class="project-img">
+                    <div class="project-info">
+                        <h3>Proyecto 1</h3>
+                        <!-- SVG de taza de café más grande -->
+<div class="coffee-container">
+    <svg class="coffee-cup" width="60" height="60" viewBox="0 0 100 100">
+      <!-- Taza más grande -->
+      <path class="cup" d="M15 35 H75 Q85 35 85 45 V75 Q85 85 75 85 H25 Q15 85 15 75 V45 Q15 35 15 35" fill="#00ffff"/>
+      <!-- Asa más grande -->
+      <path d="M80 50 Q95 50 95 60 Q95 70 80 70" fill="none" stroke="#00ffff" stroke-width="4"/>
+      <!-- Texto "COFFEE" más grande -->
+      <text x="28" y="65" fill="#000" font-size="14" font-family="Arial" font-weight="bold">COFFEE</text>
+      <!-- Humo más visible -->
+      <g class="smoke">
+        <path d="M35 15 Q40 5 45 15" fill="none" stroke="#00ffff" stroke-width="3">
+          <animate attributeName="d" 
+                   dur="3s" 
+                   values="M35 15 Q40 5 45 15;
+                           M35 15 Q40 0 45 15;
+                           M35 15 Q40 5 45 15"
+                   repeatCount="indefinite"/>
+          <animate attributeName="opacity" 
+                   dur="3s" 
+                   values="0;1;0"
+                   repeatCount="indefinite"/>
+        </path>
+        <path d="M45 15 Q50 5 55 15" fill="none" stroke="#00ffff" stroke-width="3">
+          <animate attributeName="d" 
+                   dur="3s" 
+                   begin="0.5s"
+                   values="M45 15 Q50 5 55 15;
+                           M45 15 Q50 0 55 15;
+                           M45 15 Q50 5 55 15"
+                   repeatCount="indefinite"/>
+          <animate attributeName="opacity" 
+                   dur="3s" 
+                   begin="0.5s"
+                   values="0;1;0"
+                   repeatCount="indefinite"/>
+        </path>
+      </g>
+    </svg>
+  </div>
+                        <p>Descripción del proyecto 1</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                           
+        <a href="http://proyecto1-acamdelo.s3-website-us-east-1.amazonaws.com" 
+        target="_blank" 
+        class="project-link">
+         Ver Proyecto
+     </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./img/pc1.png" alt="Proyecto 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Proyecto 2</h3>
+                        <!-- SVG de taza de café más grande -->
+<div class="coffee-container">
+    <svg class="coffee-cup" width="60" height="60" viewBox="0 0 100 100">      
+      <path class="cup" d="M15 35 H75 Q85 35 85 45 V75 Q85 85 75 85 H25 Q15 85 15 75 V45 Q15 35 15 35" fill="#00ffff"/>
+      
+      <path d="M80 50 Q95 50 95 60 Q95 70 80 70" fill="none" stroke="#00ffff" stroke-width="4"/>
+      
+      <text x="28" y="65" fill="#000" font-size="14" font-family="Arial" font-weight="bold">COFFEE</text>
+    
+      <g class="smoke">
+        <path d="M35 15 Q40 5 45 15" fill="none" stroke="#00ffff" stroke-width="3">
+          <animate attributeName="d" 
+                   dur="3s" 
+                   values="M35 15 Q40 5 45 15;
+                           M35 15 Q40 0 45 15;
+                           M35 15 Q40 5 45 15"
+                   repeatCount="indefinite"/>
+          <animate attributeName="opacity" 
+                   dur="3s" 
+                   values="0;1;0"
+                   repeatCount="indefinite"/>
+        </path>
+        <path d="M45 15 Q50 5 55 15" fill="none" stroke="#00ffff" stroke-width="3">
+          <animate attributeName="d" 
+                   dur="3s" 
+                   begin="0.5s"
+                   values="M45 15 Q50 5 55 15;
+                           M45 15 Q50 0 55 15;
+                           M45 15 Q50 5 55 15"
+                   repeatCount="indefinite"/>
+          <animate attributeName="opacity" 
+                   dur="3s" 
+                   begin="0.5s"
+                   values="0;1;0"
+                   repeatCount="indefinite"/>
+        </path>
+      </g>
+    </svg>
+  </div>
+                        <p>Descripción del proyecto 2</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://[NOMBRE-BUCKET].s3.[REGION].amazonaws.com/[RUTA]/index.html" 
+           target="_blank" 
+           class="project-link">
+            Ver Proyecto
+        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="neon-rectangle"></div>
+                <h2>Let's talk business</h2>
+                
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+<form id="contactForm" class="contact-form">
+    <div class="form-group">
+        <input type="text" id="name" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+        <textarea id="message" placeholder="Message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send Message</button>
+</form>
+            </div>
+        </section>
+    </div>
+    <div class="social-links">
+        <a href="https://wa.me/TUNUMERO" class="social-link whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/TUUSUARIO" class="social-link instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/TUUSUARIO" class="social-link facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://linkedin.com/in/TUUSUARIO" class="social-link linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
