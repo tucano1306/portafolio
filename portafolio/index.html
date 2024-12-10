@@ -139,7 +139,7 @@
                             <span>JavaScript</span>
                         </div>
                            
-        <a href="http://proyecto1-acamdelo.s3-website-us-east-1.amazonaws.com" 
+        <a href="http://acamdelo-proyecto-1.s3-website-us-east-1.amazonaws.com" 
         target="_blank" 
         class="project-link">
          Ver Proyecto
@@ -196,7 +196,7 @@
                             <span>CSS</span>
                             <span>JavaScript</span>
                         </div>
-                        <a href="https://[NOMBRE-BUCKET].s3.[REGION].amazonaws.com/[RUTA]/index.html" 
+                        <a href="http://proyecto2-acamdelo.s3-website-us-east-1.amazonaws.com/" 
            target="_blank" 
            class="project-link">
             Ver Proyecto
@@ -216,16 +216,18 @@
 
 <form id="contactForm" class="contact-form">
     <div class="form-group">
-        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="name" name="from_name" placeholder="Name" required>
     </div>
     <div class="form-group">
-        <input type="email" id="email" placeholder="Email" required>
+        <input type="email" id="email" name="reply_to" placeholder="Email" required>
     </div>
     <div class="form-group">
-        <textarea id="message" placeholder="Message" rows="5" required></textarea>
+        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
     </div>
     <button type="submit" class="submit-btn">Send Message</button>
 </form>
+
+
             </div>
         </section>
     </div>
