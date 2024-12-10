@@ -304,7 +304,7 @@ function typeWriter(element, text, i = 0) {
     if (i < text.length) {
         element.textContent += text.charAt(i);
         i++;
-        setTimeout(() => typeWriter(element, text, i), 100); // Ajusta la velocidad aquí
+        setTimeout(() => typeWriter(element, text, i), 100); 
     }
 }
 
@@ -324,10 +324,21 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    emailjs.sendForm('service_p2nwakt', 'template_bhraf3e', this)
+    
+    const templateParams = {
+        from_name: document.getElementById('name').value,
+        message: document.getElementById('message').value,
+        reply_to: document.getElementById('email').value,
+        to_name: "Leo"
+    };
+
+    
+    console.log('Enviando:', templateParams); 
+
+    emailjs.send('service_p2nwakt', 'template_bhraf3e', templateParams)
         .then(() => {
             btn.textContent = 'Message Sent!';
-            this.reset();
+            document.getElementById('contactForm').reset();
             setTimeout(() => {
                 btn.textContent = 'Send Message';
                 btn.disabled = false;
@@ -336,12 +347,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         .catch((error) => {
             console.error('Error:', error);
             btn.textContent = 'Error! Try Again';
-            setTimeout(() => {
-                btn.textContent = 'Send Message';
-                btn.disabled = false;
-            }, 3000);
+            btn.disabled = false;
         });
 });
+
+
 document.querySelectorAll('.nav-item').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
