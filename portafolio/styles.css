@@ -1,5 +1,5 @@
 :root {
-    
+    /* Dark theme (default) */
     --primary-color: #c5dad8;
     --accent-color: #f70808;
     --dark-bg: #0a0a0a;
@@ -7,13 +7,13 @@
     --text-color: #ffffff;
 }
 
-
+/* Light theme - Colores mejorados */
 [data-theme="light"] {
-    --primary-color: #00c2b8;    
-    --accent-color: #e6003a;     
-    --dark-bg: #9bb9b9;          
-    --card-bg: #9bb9b9;          
-    --text-color: #1809eb;       
+    --primary-color: #00c2b8;    /* Verde azulado más oscuro para mejor contraste */
+    --accent-color: #e6003a;     /* Rojo ajustado para modo claro */
+    --dark-bg: #9bb9b9;          /* Gris muy claro con toque azulado */
+    --card-bg: #9bb9b9;          /* Blanco para las tarjetas */
+    --text-color: #1809eb;       /* Casi negro para el texto */
 }
 
 
@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(-4rem); 
+    transform: translateX(-4rem); /* Ajusta este valor según necesites */
     animation: glow 2s infinite;
     margin-left: clamp(-2rem, -5vw, -4rem);
 }
@@ -64,9 +64,9 @@ header h1 {
 }
 
 .about {
-    padding-top: 30;  
-    margin-top: -5rem;  
-    min-height: 90vh;  
+    padding-top: 30;  /* Reducir el padding superior */
+    margin-top: -5rem;  /* Margen negativo para subir la sección */
+    min-height: 90vh;  /* Reducir la altura mínima */
     display: flex;
     align-items: center;
 }
@@ -76,11 +76,11 @@ header h1 {
     max-width: 600px;
 }
 
-@media screen and (max-width: 428px) { 
+@media screen and (max-width: 428px) { /* iPhone 14 Pro Max width */
     .about {
         min-height: 70vh;
         padding: 1.5rem 0.5rem;
-        scale: 0.9; 
+        scale: 0.9; /* Reduce toda la sección */
     }
 
     .about .section-title {
@@ -121,8 +121,8 @@ header h1 {
 }
 
 
-
-@media screen and (max-width: 390px) { 
+/* Para dispositivos aún más pequeños */
+@media screen and (max-width: 390px) { /* iPhone 14 width */
     .about {
         scale: 0.85;
         min-height: 65vh;
@@ -141,7 +141,7 @@ header h1 {
     }
 }
 
-
+/* Para asegurar el scroll suave */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
@@ -151,6 +151,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Title Section */
 
 .title-section {
     position: relative;
@@ -220,7 +221,7 @@ ffile-section {
 .tech-icons {
     margin-top: 3rem;
     margin-bottom: 2rem;
-    padding-bottom: 2rem; 
+    padding-bottom: 2rem; /* Espacio adicional abajo */
 }
 
 .tech-row {
@@ -228,19 +229,19 @@ ffile-section {
     gap: 3rem;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem; /* Espacio adicional para evitar cortes */
 }
 
 
 
-
+/* Animación de entrada para los iconos */
 .tech-item {
     opacity: 0;
     transform: translateY(20px);
     animation: iconFadeIn 0.6s ease forwards;
 }
 
-
+/* Retraso para cada icono */
 .tech-item:nth-child(1) {
     animation-delay: 0.5s;
 }
@@ -264,7 +265,7 @@ ffile-section {
     }
 }
 
-
+/* Efecto hover mejorado */
 .tech-item:hover i {
     transform: scale(1.2);
     transition: transform 0.3s ease;
@@ -281,7 +282,7 @@ ffile-section {
     transition: all 0.3s ease;
 }
 
-
+/* Colores específicos para cada tecnología */
 .tech-item .fa-html5 {
     color: #e34f26;
 }
@@ -297,7 +298,7 @@ ffile-section {
 .tech-item span {
     color: #fff;
     font-size: 0.9rem;
-    white-space: nowrap; 
+    white-space: nowrap; /* Evita que el texto se corte */
 }
 
 .tech-item:hover {
@@ -308,7 +309,7 @@ ffile-section {
     filter: brightness(1.2);
 }
 
-
+/* Responsive adjustments */
 @media (max-width: 992px) {
     .about {
         flex-direction: column;
@@ -332,7 +333,7 @@ ffile-section {
     .container {
         display: flex;
         flex-direction: column;
-        gap: 3rem; 
+        gap: 3rem; /* Añade espacio entre elementos dentro del container */
     }
 }
     }
@@ -365,28 +366,29 @@ ffile-section {
     }
 }
 
-
+/* Tech Stack spacing fix */
 .tech-stack {
     display: flex;
-    gap: 2rem; 
+    gap: 2rem; /* Aumentamos el espacio entre iconos */
     margin-top: 2rem;
-    align-items: center; 
+    align-items: center; /* Alineamos verticalmente */
 }
 
 .tech-stack img {
     width: 40px;
     height: 40px;
     filter: brightness(1);
-    transition: transform 0.3s ease;    
+    transition: transform 0.3s ease;
+    /* Agregamos margen derecho para asegurar separación */
     margin-right: 1rem;
 }
 
-
+/* Quitamos el margen del último elemento */
 .tech-stack img:last-child {
     margin-right: 0;
 }
 
-
+/* Ajustamos el contenedor para evitar que se aprieten */
 .text-content {
     margin-bottom: 3rem;
     max-width: 100%;
@@ -416,7 +418,7 @@ ffile-section {
     color: var(--accent-color);
 }
 
-
+/* Neon Circle Updated */
 .neon-circle {
     width: 350px;
     height: 350px;
@@ -435,7 +437,7 @@ ffile-section {
     height: 90%;
     object-fit: cover;
 }
-    
+    /* Ajustes para las tarjetas de proyecto */
     .project-card {
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         border: 1px solid rgba(0, 0, 0, 0.05);
@@ -445,7 +447,7 @@ ffile-section {
         transition: 0.3s;
     }
     
-    
+    /* Ajustes para los íconos de tecnología */
     .tech-stack img {
         filter: grayscale(100%) brightness(0.3);
     }
@@ -454,7 +456,7 @@ ffile-section {
         filter: grayscale(0%);
     }
     
-    
+    /* Ajustes para los botones */
     .lang-switch, 
     .theme-switch {
         background: #ffffff;
@@ -462,25 +464,25 @@ ffile-section {
         color: var(--text-color);
     }
     
-    
+    /* Ajustes para los links sociales */
     .social-links a {
         color: #2c2c2c;
     }
     
-    
+    /* Ajustes para el formulario */
     .form-group input,
     .form-group textarea {
         background: #ffffff;
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
     
-    
+    /* Ajustes para la navegación lateral */
     .side-nav {
         color: #2c2c2c;
     }
 
 
-
+/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -504,7 +506,7 @@ body {
     padding: clamp(1rem, 3vw, 2rem);
 }
 
-
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -551,6 +553,7 @@ header {
     background: #2a2a2a;
 }
 
+
 .side-nav {
     position: fixed;
     right: 0;
@@ -587,6 +590,7 @@ header {
 .nav-item:hover {
     opacity: 1;
 }
+
 
 .hero {
     display: flex;
@@ -639,7 +643,6 @@ header {
     transform: translateY(-5px);
 }
 
-
 .neon-circle {
     width: clamp(200px, 30vw, 300px);
     height: clamp(200px, 30vw, 300px);
@@ -668,7 +671,6 @@ header {
     }
 }
 
-/* Projects  */
 .projects h2 {
     color: var(--primary-color);
     margin-bottom: clamp(1.5rem, 3vw, 2rem);
@@ -709,7 +711,7 @@ header {
 
 
 
-
+/* Contact Form */
 .contact {
     min-height: 90vh;  
     padding: 1rem 0;   
@@ -734,7 +736,7 @@ header {
     border-radius: 10px;
     width: 100%;
     max-width: 500px; 
-    margin: 0 auto; 
+    margin: 0 auto;  
     margin-bottom: 4rem; 
 }
 
@@ -790,7 +792,7 @@ header {
     background: var(--accent-color);
 }
 
-/* Social Links */
+
 .social-links {
     position: fixed;
     bottom: 2rem;
@@ -867,7 +869,6 @@ header {
 .mobile-menu.active {
     background: var(--accent-color);
 }
-
 
 @media (max-width: 480px) {
     .mobile-menu {
@@ -1028,8 +1029,6 @@ and (orientation: landscape) {
         flex-direction: row;
     }
 }
-
-
 @supports (padding-top: env(safe-area-inset-top)) {
     .container {
         padding-left: max(1rem, env(safe-area-inset-left));
@@ -1087,7 +1086,6 @@ section {
     transition: all 0.8s ease-out;
 }
 
-
 .nav-item {
     position: relative;
     overflow: hidden;
@@ -1113,7 +1111,6 @@ section {
 .nav-item:hover {
     text-shadow: 0 0 8px var(--accent-color);
 }
-
 
 .nav-item.clicked {
     animation: flash 0.3s ease;
@@ -1152,6 +1149,7 @@ section {
     transform: scaleX(1);
 }
 
+
     .projects {
         display: flex;
         flex-direction: column;
@@ -1182,13 +1180,13 @@ section {
     gap: 2rem;
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 4rem; /
+    padding-bottom: 4rem; 
     
 }
 
 .project-grid {
-    width: 70%;       
-    gap: 2rem;        
+    width: 70%;        
+    gap: 2rem;         
  }
 
 .project-card {    
@@ -1259,6 +1257,7 @@ section {
     }
 }
 
+
 @media screen and (max-width: 390px) { 
     .projects {
         scale: 0.85;
@@ -1286,6 +1285,8 @@ body {
         max-width: 320px;
     }
 }
+
+
 
 
 
@@ -1385,14 +1386,14 @@ body {
 section {
     min-height: 100vh; 
     padding: 2rem 1rem; 
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
     width: 100%;
     
     
 }
 
 .container {
-    overflow: hidden; 
+    overflow: hidden; /* Evita desbordamiento de contenido */
 }
 
 .project-link {
